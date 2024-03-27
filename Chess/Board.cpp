@@ -76,6 +76,12 @@ bool Board::move(bool white, int positionX, int positionY, int destinationX, int
 
     if (destination == nullptr) { // move: no piece at destination
        //return Move();
+        if (!(current->ValidMove(destinationX - positionX, destinationY - positionY))) return false;
+        
+        // check positions along the path to destination to make sure pieces aren't in the way
+
+        board[destinationX][destinationY] = board[positionX][positionY];
+        board[positionX][positionY] = nullptr;
     }
     else { // capture: opposing player has piece at destination
         //return Capture();
@@ -103,4 +109,5 @@ void Board::print() {
         }
         cout << endl;
     } 
+    cout << endl;
 }
