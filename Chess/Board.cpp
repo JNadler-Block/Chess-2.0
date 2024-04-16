@@ -78,7 +78,13 @@ bool Board::move(bool white, int positionX, int positionY, int destinationX, int
        //return Move();
         if (!(current->ValidMove(destinationX - positionX, destinationY - positionY))) return false;
         
+        //vector<vector<int>> path = current->MovePath(positionX, positionY, destinationX, destinationY);
+
         // check positions along the path to destination to make sure pieces aren't in the way
+        // positions 
+        // for (i : positions[])
+        //     if (position[i] != null)
+        //         return false
 
         board[destinationX][destinationY] = board[positionX][positionY];
         board[positionX][positionY] = nullptr;

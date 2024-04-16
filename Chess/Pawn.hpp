@@ -1,3 +1,6 @@
+#ifndef Pawn_h
+#define Pawn_h
+
 #include "Piece.hpp"
 
 class Pawn : public Piece {
@@ -5,4 +8,8 @@ class Pawn : public Piece {
         Pawn(bool color) : Piece("Pawn", color, color ? 'P' : 'p'){};
         bool ValidMove(int, int);
         bool ValidCapture(int, int);
+        //vector<vector<int>> MovePath(int, int, int, int);
 };
+
+
+#endif

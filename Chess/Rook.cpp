@@ -7,3 +7,5 @@ bool Rook::ValidMove(int relativeX, int relativeY){
 bool Rook::ValidCapture(int relativeX, int relativeY){
     return ValidMove(relativeX, relativeY);
 }
+
+

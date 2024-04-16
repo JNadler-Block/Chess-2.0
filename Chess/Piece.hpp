@@ -1,10 +1,11 @@
 #ifndef Piece_h
 #define Piece_h
 
+#include "HelperFunctions.cpp"
 #include <iostream>
-#include <vector>
 
 using namespace std;
+
 
 class Piece {
     public:
@@ -14,10 +15,12 @@ class Piece {
         char GetSymbol() { return symbol;};
         virtual bool ValidMove(int, int) = 0;
         virtual bool ValidCapture(int, int) = 0;
+
     private:
         string name = "";
         bool white;
         char symbol;
 };
+
 
 #endif

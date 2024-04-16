@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/Shannon/Documents/Programs/Chess-2.0/Chess",
+      "program": "/Users/Shannon/Documents/Programs/Chess-2.0/Chess/build/Debug/outDebug"
+    }
+  ]
+}
