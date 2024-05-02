@@ -12,4 +12,3 @@ main: main.o $(objects)
 
 clean:
 	rm *.o
-	rm *.hpp.gch

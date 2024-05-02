@@ -62,7 +62,7 @@ void Board::populate(){
 
 
 
-// TODO: Make sure Knight's MovePath function is called 
+ 
 bool Board::move(bool white, int positionX, int positionY, int destinationX, int destinationY) {
     cout << "Trying to move" << endl;
     if (positionX >= SIZE || positionX < 0 || positionY >= SIZE  || positionY < 0) return false;
