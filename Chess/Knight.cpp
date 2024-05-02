@@ -7,7 +7,8 @@ bool Knight::ValidMove(int relativeX, int relativeY){
 bool Knight::ValidCapture(int relativeX, int relativeY){
     return ValidMove(relativeX, relativeY);
 }
-/*
-vector<vector<int>> Knight::MovePath(int positionX, int positionY, int destinationX, int destinationY){
-    return vector<vector<int>>{};
-} */
+
+vector<vector<int> > Knight::MovePath(int positionX, int positionY, int destinationX, int destinationY) {
+    cout << "Knight Move Path" << endl;
+    return vector<vector<int> >{};
+} 

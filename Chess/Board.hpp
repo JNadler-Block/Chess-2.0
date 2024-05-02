@@ -13,5 +13,7 @@ class Board {
 		// displays current board
 		void print();
     private:
+		// board[x][y] 
+		// x refers to columm, y refers to row
         Piece* board[SIZE][SIZE];
 };

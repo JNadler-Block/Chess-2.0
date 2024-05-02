@@ -1,6 +1,6 @@
 CC = g++
 CFLAGS = -std=c++20 -Wall -g
-objects = Board.o Bishop.o King.o Queen.o Pawn.o Knight.o Rook.o
+objects = Board.o Bishop.o King.o Queen.o Pawn.o Knight.o Rook.o Piece.o
 
 default: main
 
