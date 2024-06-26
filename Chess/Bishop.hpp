@@ -8,7 +8,6 @@ class Bishop : public Piece {
         Bishop(bool color) : Piece("Bishop", color, color ? 'B' : 'b'){};
         bool ValidMove(int, int);
         bool ValidCapture(int, int);
-        //vector<vector<int>> MovePath(int, int, int, int);
 };
 
 #endif

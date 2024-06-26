@@ -6,9 +6,8 @@
 class Pawn : public Piece {
     public:
         Pawn(bool color) : Piece("Pawn", color, color ? 'P' : 'p'){};
-        bool ValidMove(int, int);
-        bool ValidCapture(int, int);
-        //vector<vector<int>> MovePath(int, int, int, int);
+        bool ValidMove(int, int) override;
+        bool ValidCapture(int, int) override;
 };
 
 

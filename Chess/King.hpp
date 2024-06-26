@@ -6,9 +6,8 @@
 class King : public Piece {
     public:
         King(bool color) : Piece("King", color, color ? 'K' : 'k'){};
-        bool ValidMove(int, int);
-        bool ValidCapture(int, int);
-        //virtual vector<vector<int>> MovePath(int, int, int, int);
+        bool ValidMove(int, int) override;
+        bool ValidCapture(int, int) override;
 };
 
 

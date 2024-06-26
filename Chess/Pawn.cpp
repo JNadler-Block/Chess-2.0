@@ -8,7 +8,7 @@ bool Pawn::ValidMove(int relativeX, int relativeY){
 }
 
 bool Pawn::ValidCapture(int relativeX, int relativeY){
-    if (abs(relativeX) != 1) return false;
-    int validY = GetColor() ? 1 : -1;
-    return relativeY == validY;
+    if (abs(relativeY) != 1) return false;
+    int validX = GetColor() ? 1 : -1;
+    return relativeX == validX;
 }

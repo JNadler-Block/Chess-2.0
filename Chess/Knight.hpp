@@ -6,8 +6,8 @@
 class Knight : public Piece {
     public:
         Knight(bool color) : Piece("Knight", color, color ? 'N' : 'n'){};
-        bool ValidMove(int, int);
-        bool ValidCapture(int, int);
+        bool ValidMove(int, int) override;
+        bool ValidCapture(int, int) override;
         vector<vector<int> > MovePath(int, int, int, int) override;
 };
 

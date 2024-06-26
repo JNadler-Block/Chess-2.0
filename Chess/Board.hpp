@@ -12,6 +12,10 @@ class Board {
 		bool move(bool, int, int, int, int);
 		// displays current board
 		void print();
+		// displays information for a turn
+		void printTurn(bool);
+		//
+		Piece* getPiece(int, int);
     private:
 		// board[x][y] 
 		// x refers to columm, y refers to row
